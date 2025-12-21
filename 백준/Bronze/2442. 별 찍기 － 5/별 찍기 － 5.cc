@@ -1,0 +1,25 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int o;
+
+	cin >> o;
+
+	for (int i = o - 1; i >= 0; i--)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			cout << " ";
+		}
+
+		for (int j = 0; j < (o - i) * 2 - 1; j++)
+		{
+			cout << "*";
+		}
+
+		cout << '\n';
+	}
+}

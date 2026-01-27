@@ -1,0 +1,40 @@
+#include<iostream>
+#include<stack>
+
+using namespace std;
+
+int main()
+{
+	stack<int> s;
+	int n, temp, result = 0;
+
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> temp;
+
+		if (temp == 0)
+		{
+			if (s.size() != 0)
+			{
+				s.pop();
+			}
+		}
+		else
+		{
+			s.push(temp);
+		}
+	}
+
+	temp = s.size();
+
+	for (int i = 0; i < temp; i++)
+	{
+		result += s.top();
+		
+		s.pop();
+	}
+
+	cout << result;
+}

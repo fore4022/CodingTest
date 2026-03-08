@@ -26,32 +26,31 @@ int main()
 		}
 	}
 
-	it = d.end() - 1;
+	
 
 	for (int i = 0; i < count0 / 2; i++)
 	{
+		it = d.end() - 1;
+
 		while (*it != '0')
 		{
 			it = prev(it);
 		}
 
-		it = prev(it);
-
-		d.erase(next(it));
+		d.erase(it);
 	}
 
-	it = d.begin();
 
 	for (int i = 0; i < count1 / 2; i++)
 	{
+		it = d.begin();
+
 		while (*it != '1')
 		{
 			it = next(it);
 		}
 
-		it = next(it);
-
-		d.erase(prev(it));
+		d.erase(it);
 	}
 
 	while (d.size() != 0)

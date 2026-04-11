@@ -1,13 +1,11 @@
 #include<iostream>
 #include<vector>
-#include<deque>
 #include<set>
 
 using namespace std;
 
-vector<int> vec;
+vector<int> vec, result;
 vector<bool> visited;
-deque<int> dq;
 int limitDepth;
 
 void dfs(int node, int depth = 1)
@@ -19,7 +17,7 @@ void dfs(int node, int depth = 1)
 
     visited[node] = true;
 
-    dq.push_back(node);
+    result.push_back(node);
 
     for (int i = 1; i <= vec.size() - 1; i++)
     {
@@ -28,10 +26,10 @@ void dfs(int node, int depth = 1)
             dfs(vec[i], depth + 1);
         }
     }
-    
+
     if (depth == limitDepth)
     {
-        for (int i : dq)
+        for (int i : result)
         {
             cout << i << " ";
         }
@@ -41,7 +39,7 @@ void dfs(int node, int depth = 1)
 
     visited[node] = false;
 
-    dq.pop_back();
+    result.pop_back();
 }
 
 int main()

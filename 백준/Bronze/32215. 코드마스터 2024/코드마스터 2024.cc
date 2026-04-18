@@ -1,19 +1,12 @@
-	#include<iostream>
-
-	using namespace std;
-
-	int main()
-	{
-		int n, m, k;
-
-		cin >> n >> m >> k;
-
-		if (n == k)
-		{
-			cout << k * m;
-		}
-		else
-		{
-			cout << (k + 1) * m;
-		}
-	}
+<html>
+<head><title>504 Gateway Time-out</title></head>
+<body>
+<center><h1>504 Gateway Time-out</h1></center>
+</body>
+</html>
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
